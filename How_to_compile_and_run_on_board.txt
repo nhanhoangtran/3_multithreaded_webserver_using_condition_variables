@@ -1,0 +1,18 @@
+
+
+export BUILD_PATH=/working5/vs/nhantran/Projects/FPT/SMP/SDK/toolkit_8673B_cobalt_v20/build
+export PATH=$BUILD_PATH/mips-2015.05/bin:$PATH
+
+#CC      = mips-linux-gnu-gcc
+#CFLAGS  = $(INCLUDES) -g -Wall -Wextra -D_FILE_OFFSET_BITS=64 -Wa,-mips32r2 -Wa,-mips32r2 -DWITH_THREADS -fPIC -EL
+
+
+
+
+####################
+
+c794e59faa28d495786fdeac9f210cde
+mkdir /working5
+mount -o nolock 10.60.1.251:/working5/ /working5
+
+cd /working5/vs/nhantran/Projects/Practice/Network_Programming/multithreaded_server
