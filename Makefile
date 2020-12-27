@@ -7,6 +7,7 @@
 
 
 CC = clang
+# CC = arm-linux-gnueabihf-gcc
 CFLAGS = -Wall -g -pthread
 # CC      = mips-linux-gnu-gcc
 # CFLAGS  = $(INCLUDES) -g -Wall -Wextra -D_FILE_OFFSET_BITS=64 -Wa,-mips32r2 -Wa,-mips32r2 -DWITH_THREADS -fPIC -EL -pthread
@@ -15,7 +16,7 @@ OBJS = server.o myqueue.o
 
 all: $(BINS)
 
-server: $(OBJS)
+$(BINS): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
